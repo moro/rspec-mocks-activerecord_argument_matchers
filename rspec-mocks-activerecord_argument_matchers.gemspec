@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Rspec::Mocks::ActiverecordArgumentMatchers::VERSION
   spec.authors       = ["moro"]
   spec.email         = ["moronatural@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Argument matcher for asserting AR object equality.}
+  spec.description   = %q{Argument matcher for asserting AR object equality.}
   spec.homepage      = ""
   spec.license       = "MIT"
 

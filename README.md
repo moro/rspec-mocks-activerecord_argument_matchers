@@ -1,6 +1,8 @@
-# Rspec::Mocks::ActiverecordArgumentMatchers
+# RSpec::Mocks::ActiverecordArgumentMatchers
 
-TODO: Write a gem description
+Provide RSpec argument matcher for asserting AR object equality.
+
+The porpose of the gem is to reduce casual use of `any_isntace_of`: which is often used to specify a targeting record outsid of scope.
 
 ## Installation
 
@@ -18,7 +20,26 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Add include configuration at `spec/spec_helper.rb`
+
+```ruby
+RSpec.configure do |config|
+  # ... snip ..
+  config.include RSpec::Mocks::ActiverecordArgumentMatchers
+end
+```
+
+Now you can use `same_record_of` argument matcher in an example.
+
+```ruby
+let(:resource) { MyResource.create! }
+
+specify do
+  expect(Somethingcreator).to receive(:work).with(same_record_of(resource)) { :fine }
+
+  post :something, id: resource.id
+end
+```
 
 ## Contributing
 
