@@ -2,7 +2,7 @@
 
 Provide RSpec argument matcher for asserting AR object equality.
 
-The porpose of the gem is to reduce casual use of `any_isntace_of`: which is often used to specify a targeting record outsid of scope.
+The porpose of the gem is to reduce casual use of `any_isntace_of` : which is often used to specify a record used at far scope from an example.
 
 ## Installation
 
@@ -35,7 +35,7 @@ Now you can use `same_record_of` argument matcher in an example.
 let(:resource) { MyResource.create! }
 
 specify do
-  expect(Somethingcreator).to receive(:work).with(same_record_of(resource)) { :fine }
+  expect(SomethingCreator).to receive(:work).with(same_record_of(resource)) { :fine }
 
   post :something, id: resource.id
 end
