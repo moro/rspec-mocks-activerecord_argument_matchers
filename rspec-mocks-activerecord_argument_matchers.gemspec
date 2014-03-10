@@ -5,7 +5,7 @@ require 'rspec/mocks/activerecord_argument_matchers/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "rspec-mocks-activerecord_argument_matchers"
-  spec.version       = Rspec::Mocks::ActiverecordArgumentMatchers::VERSION
+  spec.version       = RSpec::Mocks::ActiverecordArgumentMatchers::VERSION
   spec.authors       = ["moro"]
   spec.email         = ["moronatural@gmail.com"]
   spec.summary       = %q{Argument matcher for asserting AR object equality.}
