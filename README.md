@@ -2,7 +2,7 @@
 
 Provide RSpec argument matcher for asserting AR object equality.
 
-The porpose of the gem is to reduce casual use of `any_isntace_of` : which is often used to specify a record used at far scope from an example.
+The purpose of the gem is to reduce casual use of `any_instance_of` : which is often used to specify a record used at far scope from an example.
 
 ## Installation
 
@@ -43,7 +43,7 @@ end
 
 ## Contributing
 
-1. Fork it ( http://github.com/<my-github-username>/rspec-mocks-activerecord_argument_matchers/fork )
+1. Fork it ( http://github.com/moro/rspec-mocks-activerecord_argument_matchers/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
